@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:lathian_new_app/model/article.dart';
-import 'package:lathian_new_app/widget/article_web_view.dart';
+import 'package:lathian_new_app/widgets/article_web_view.dart';
 
 class ArticleDetailPage extends StatelessWidget {
   static const routeName = '/article_detail';

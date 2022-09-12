@@ -3,7 +3,7 @@ import 'package:lathian_new_app/model/article.dart';
 import 'package:lathian_new_app/screen/detail_page.dart';
 import 'package:lathian_new_app/screen/list_page.dart';
 import 'package:lathian_new_app/theme/styles.dart';
-import 'package:lathian_new_app/widget/article_web_view.dart';
+import 'package:lathian_new_app/widgets/article_web_view.dart';
 
 void main() {
   runApp(const MyApp());
