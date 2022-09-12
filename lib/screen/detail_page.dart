@@ -19,6 +19,10 @@ class ArticleDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Hero(
+              tag: article.urlToImage,
+              child: Image.network(article.urlToImage),
+            ),
             Text(article.description),
             const Divider(
               color: Colors.grey,
