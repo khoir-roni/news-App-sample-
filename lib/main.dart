@@ -23,6 +23,21 @@ class MyApp extends StatelessWidget {
                 onPrimary: Colors.black,
                 secondary: secondaryColor,
               ),
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            //untuk mengubah tema tombol
+            style: ElevatedButton.styleFrom(
+              backgroundColor: secondaryColor,
+              foregroundColor: Colors.white,
+              textStyle: const TextStyle(),
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(0),
+                ),
+              ),
+            ), // border button 0
+          ),
+          appBarTheme: const AppBarTheme(elevation: 0),
+          textTheme: myTextTheme, // tambahkan myTextTheme sebagai parameter
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity),
       initialRoute: NewListPage.routeName, // halaman awal
