@@ -12,38 +12,41 @@ class CustomScaffold extends StatelessWidget {
           child: Stack(
         children: [
           body,
-          Card(
-            shape: const BeveledRectangleBorder(
-              //ubah bentuk app bar
-              borderRadius: BorderRadius.only(
-                bottomRight: Radius.circular(16.0),
-              ),
-            ),
+          _buildShortAppBar(context), //refactor widget supaya mudah di pahami
+        ],
+      )),
+    );
+  }
 
-            margin: const EdgeInsets.all(0), // hilangkan margin bawaan
-            child: Row(
-              mainAxisSize:
-                  MainAxisSize.min, // ukuran widget row menajadi minimum
-              children: [
-                IconButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  icon: const Icon(Icons.arrow_back),
-                ),
-                Padding(
-                  // di samping icon back tambah text
-                  padding: const EdgeInsets.only(right: 16),
-                  child: Text(
-                    'N',
-                    style: Theme.of(context).textTheme.headline6,
-                  ),
-                ),
-              ],
+  Card _buildShortAppBar(BuildContext context) {
+    return Card(
+      shape: const BeveledRectangleBorder(
+        //ubah bentuk app bar
+        borderRadius: BorderRadius.only(
+          bottomRight: Radius.circular(16.0),
+        ),
+      ),
+
+      margin: const EdgeInsets.all(0), // hilangkan margin bawaan
+      child: Row(
+        mainAxisSize: MainAxisSize.min, // ukuran widget row menajadi minimum
+        children: [
+          IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.arrow_back),
+          ),
+          Padding(
+            // di samping icon back tambah text
+            padding: const EdgeInsets.only(right: 16),
+            child: Text(
+              'N',
+              style: Theme.of(context).textTheme.headline6,
             ),
           ),
         ],
-      )),
+      ),
     );
   }
 }

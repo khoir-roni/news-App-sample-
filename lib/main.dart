@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:lathian_new_app/model/article.dart';
-import 'package:lathian_new_app/screen/detail_page.dart';
-import 'package:lathian_new_app/screen/list_page.dart';
-import 'package:lathian_new_app/theme/styles.dart';
-import 'package:lathian_new_app/widgets/article_web_view.dart';
+import 'model/article.dart';
+import 'screen/detail_page.dart';
+import 'screen/list_page.dart';
+import 'theme/styles.dart';
+import 'widgets/article_web_view.dart';
 
 void main() {
   runApp(const MyApp());

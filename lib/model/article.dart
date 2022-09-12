@@ -3,13 +3,13 @@ import 'dart:convert';
 
 class Article {
   Article({
-   required this.author,
-   required this.title,
-   required this.description,
-   required this.url,
-   required this.urlToImage,
-   required this.publishedAt,
-   required this.content,
+    required this.author,
+    required this.title,
+    required this.description,
+    required this.url,
+    required this.urlToImage,
+    required this.publishedAt,
+    required this.content,
   });
 
   String author;
@@ -30,7 +30,6 @@ class Article {
         publishedAt: DateTime.parse(article["publishedAt"]),
         content: article["content"],
       );
-
 }
 
 // konversi json atau json parsing

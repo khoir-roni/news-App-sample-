@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lathian_new_app/model/article.dart';
-import 'package:lathian_new_app/screen/detail_page.dart';
+import '../model/article.dart';
+import 'detail_page.dart';
 
 class NewListPage extends StatelessWidget {
   static const routeName = '/article_list';
