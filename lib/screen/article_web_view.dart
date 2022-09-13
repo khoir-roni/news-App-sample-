@@ -1,7 +1,7 @@
 // widget yang akan menampilkan detail article
 
 import 'package:flutter/material.dart';
-import 'package:lathian_new_app/widgets/custom_scaffold.dart';
+import 'package:latihan_news_app/widgets/custom_scaffold.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class ArticleWebView extends StatelessWidget {
